@@ -3,8 +3,104 @@
   // can be overrided by uses `themeConfig` option
   --slidev-theme-primary: #5d8392;
 }
+.slidev-layout {
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  div {
+    @apply select-none text-[#002c47];
+  }
 
-.slidev-layout.cover,
+  h1 {
+    @apply text-4xl mb-4 font-700 -ml-[0.05em];
+  }
+  h1 + h2 {
+    @apply -mt-4;
+  }
+
+  h2 {
+    @apply text-2xl font-700;
+  }
+
+  h3 {
+    @apply text-sm pt-2 uppercase tracking-widest font-500 -ml-[0.05em];
+  }
+
+  h3:not(.opacity-100) {
+    @apply opacity-40;
+  }
+
+  p {
+    @apply my-4 leading-6;
+  }
+
+  h1 + p {
+    @apply -mt-2 mb-4;
+  }
+
+  p + h2,
+  ul + h2,
+  table + h2 {
+    @apply mt-10;
+  }
+
+  ul {
+    list-style: disc;
+    @apply mt-4;
+  }
+
+  li {
+    @apply ml-1.1em pl-0.2em leading-1.8em;
+  }
+
+  blockquote {
+    @apply text-sm px-2 py-1 bg-$prism-background border-$slidev-theme-primary border-l rounded;
+  }
+
+  blockquote > * {
+    @apply my-0;
+  }
+
+  table {
+    @apply w-full;
+  }
+
+  tr {
+    @apply border-b border-gray-400 border-opacity-20;
+  }
+
+  th {
+    @apply text-left font-400;
+  }
+
+  a {
+    @apply border-current border-b border-dashed hover:(text-$slidev-theme-primary border-solid);
+  }
+
+  td,
+  th {
+    @apply p-2 py-3;
+  }
+
+  b,
+  strong {
+    @apply font-600;
+  }
+
+  kbd {
+    @apply border border-gray-400 border-b-2 border-opacity-20 rounded;
+    @apply bg-gray-400 bg-opacity-5 py-0.5 px-1 text-sm font-mono;
+  }
+}
+.slidev-layout.cover {
+  @apply text-center mx-auto;
+
+  h1 {
+    @apply bg-[#002c47] rounded-md py-10px px-20px text-5xl text-white;
+  }
+},
 .slidev-layout.intro {
   @apply h-full grid;
 

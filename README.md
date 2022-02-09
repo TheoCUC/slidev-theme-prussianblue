@@ -2,6 +2,8 @@
 
 [![NPM version](https://img.shields.io/npm/v/slidev-theme-prussianblue?color=3AB9D4&label=)](https://www.npmjs.com/package/slidev-theme-prussianblue)
 
+[Live demo](https://slidev-theme-prussianblue.netlify.app)
+
 A (...) theme for [Slidev](https://github.com/slidevjs/slidev).
 
 <!--
@@ -24,7 +26,7 @@ A (...) theme for [Slidev](https://github.com/slidevjs/slidev).
 Add the following frontmatter to your `slides.md`. Start Slidev then it will prompt you to install the theme automatically.
 
 <pre><code>---
-theme: <b>prussianblue</b>
+theme: <b>PrussianBlue</b>
 ---</code></pre>
 
 Learn more about [how to use a theme](https://sli.dev/themes/use).
@@ -33,13 +35,36 @@ Learn more about [how to use a theme](https://sli.dev/themes/use).
 
 This theme provides the following layouts:
 
-> TODO:
+### cover
 
-## Components
+![cover](https://gitee.com/isaaccaa/pictures/raw/master/img2022/202202092227812.png)
 
-This theme provides the following components:
+### default page
 
-> TODO:
+```
+---
+id: 1
+---
+```
+
+![about](https://gitee.com/isaaccaa/pictures/raw/master/img2022/202202092228011.png)
+
+### imagex
+
+```markdown
+---
+layout: imagex
+image: https://gitee.com/isaaccaa/pictures/raw/master/img2022/0186795d843896a8012060be1cbe75.jpg
+pos: center
+size: h-260px
+---
+
+somgthing
+
+---
+```
+
+![image](https://gitee.com/isaaccaa/pictures/raw/master/img2022/202202092228813.png)
 
 ## Contributing
 
