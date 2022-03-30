@@ -36,7 +36,7 @@ export default defineComponent({
 		<div
 			class="-z-2 bg-white shadow-lg rounded-md flex absolute mx-auto my-10 w-9/10 h-85/100 left-12 top-0"
 		>
-			<div class="slidev-layout default">
+			<div class="slidev-layout default w-full">
 				<div class="my-auto">
 					<img :src="image" class="border-image" :class="Alignment" />
 					<slot />
