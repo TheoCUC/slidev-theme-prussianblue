@@ -6,32 +6,18 @@ export default defineComponent({
     id: {
       type: Number,
       required: true,
-    },
-    contentsValue: {
-      type: String,
-      required: true,
-    },
-  },
-  setup(props) {
-			const input = props.contentsValue;
-			var output = "";
-			var texts = input.split("|");
-			var color = "text-blue-gray-500";
-			for (let i = 0; i < texts.length; i++) {
-				if (i == props.id - 1) {
-					color = "text-white";
-        }
-        output += '<div class="flex-auto ' + color + ' text-center px-5">' + texts[i] + "</div>";
-        color = "text-blue-gray-500";
-			}
-			const message = output;
-			return { message };
+    }
   },
 })
 </script>
 
 <template>
   <div class="z-90 flex absolute bottom-0 w-full py-8px">
-    <span v-html="message" class="flex w-full"></span>
+    <span class="flex w-full">
+      <div v-for="(item, index) in $slidev.configs.contents" class="text-center flex-auto px-5">
+        <div v-if="id-1 == index" class="text-white">{{ item }}</div>
+        <div v-else class="text-blue-gray-500">{{ item }}</div>
+      </div>
+    </span>
   </div>
 </template>

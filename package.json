@@ -26,7 +26,7 @@
 	},
 	"//": "Learn more: https://sli.dev/themes/write-a-theme.html",
 	"slidev": {
-		"colorSchema": "both",
+		"colorSchema": "light",
 		"highlighter": "all",
 		"defaults": {
 			"fonts": {

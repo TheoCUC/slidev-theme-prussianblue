@@ -1,6 +1,9 @@
 ---
 theme: ./
-contents: About|Image|Slidev
+contents: 
+  - About
+  - Image
+  - Slidev
 ---
 
 # Slidev Theme Starter
@@ -24,7 +27,10 @@ This theme has a great feature, the progress bar.
 To use this theme, you must fill the outline for this slider in the front matter.
 
 ```
-contents: About|Image|Slidev
+contents: 
+  - About
+  - Image
+  - Slidev
 ```
 
 To highlight the section being demonstrated, you need to add the following code to the front of the page:
@@ -37,13 +43,12 @@ id: 1
 # About this theme
 ```
 
-To give it a Keynote-like appearance, I used the styles for headings and text in [@slidev/theme-apple-basic](https://github.com/slidevjs/themes/tree/main/packages/theme-apple-basic). The image was modified using [slidev-theme-purplin](https://github.com/moudev/slidev-theme-purplin) as a base; I really like this theme, but its image function isn't as powerful as I'd like.
-
+To give it a Keynote-like appearance, I used the styles for headings and text in [@slidev/theme-apple-basic](https://github.com/slidevjs/themes/tree/main/packages/theme-apple-basic). 
 
 
 ---
 layout: imagex
-image: https://gitee.com/isaaccaa/pictures/raw/master/img2022/0186795d843896a8012060be1cbe75.jpg
+image: https://isaacpic-1305775614.cos.ap-beijing.myqcloud.com/uPic/DYNAMIC_0 -  - 2022-05-13 16-22-21.png
 pos: center
 size: h-260px
 id: 2
@@ -79,7 +84,7 @@ The preceding page is represented by the flowing code.
 ```markdown
 ---
 layout: imagex
-image: https://gitee.com/isaaccaa/pictures/raw/master/img2022/0186795d843896a8012060be1cbe75.jpg
+image: https://isaacpic-1305775614.cos.ap-beijing.myqcloud.com/uPic/DYNAMIC_0 -  - 2022-05-13 16-22-21.png
 pos: center
 size: h-260px
 ---
@@ -87,7 +92,7 @@ size: h-260px
 
 ---
 layout: imagex
-image: https://gitee.com/isaaccaa/pictures/raw/master/img2022/0186795d843896a8012060be1cbe75.jpg
+image: https://isaacpic-1305775614.cos.ap-beijing.myqcloud.com/uPic/DYNAMIC_0 -  - 2022-05-13 16-22-21.png
 pos: right
 size: h-260px mx-15px
 id: 2
@@ -106,7 +111,7 @@ id: 2
 ```markdown
 ---
 layout: imagex
-image: https://gitee.com/isaaccaa/pictures/raw/master/img2022/0186795d843896a8012060be1cbe75.jpg
+image: URL
 pos: right
 size: h-260px mx-15px
 ---
