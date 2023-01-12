@@ -2,48 +2,46 @@
   // default theme color
   // can be overrided by uses `themeConfig` option
   --slidev-theme-primary: #5d8392;
+	svg {
+		@apply z-100;
+	},
 }
 .slidev-layout {
-  h1,
-  h2,
-  h3,
-  h4,
-  p,
   div {
     @apply select-none text-[#002c47];
   }
 
   h1 {
-    @apply text-4xl mb-4 font-700 -ml-[0.05em];
+    @apply text-2xl font-700 -ml-[0.05em];
   }
   h1 + h2 {
     @apply -mt-4;
   }
 
   h2 {
-    @apply text-2xl font-700;
-  }
-
-  h3 {
     @apply text-sm pt-2 uppercase tracking-widest font-500 -ml-[0.05em];
   }
 
-  h3:not(.opacity-100) {
-    @apply opacity-40;
+  h3 {
+    @apply text-sm pt-2 uppercase tracking-widest font-500 ml-[0.05em];
   }
+
+  /* h2:not(.opacity-100) {
+    @apply opacity-40;
+  } */
 
   p {
-    @apply my-4 leading-6;
+    @apply text-base my-4 leading-6;
   }
 
-  h1 + p {
+  /* h1 + p {
     @apply -mt-2 mb-4;
-  }
+	} */
 
   p + h2,
   ul + h2,
   table + h2 {
-    @apply mt-10;
+    @apply mt-3;
   }
 
   ul {
@@ -52,7 +50,7 @@
   }
 
   li {
-    @apply ml-1.1em pl-0.2em leading-1.8em;
+    @apply text-base ml-1.1em pl-0.2em leading-1.8em;
   }
 
   blockquote {
@@ -100,6 +98,10 @@
   h1 {
     @apply bg-[#002c47] rounded-md py-10px px-20px text-5xl text-white;
   }
+
+  h2 {
+    @apply text-xl font-700 -mt-4;
+  }
 },
 .slidev-layout.intro {
   @apply h-full grid;
@@ -108,9 +110,9 @@
     @apply text-6xl leading-20;
   }
 
-  h1 + p {
+  /* h1 + p {
     @apply -mt-2 opacity-50 mb-4;
-  }
+  } */
 
   p + h2, ul + h2, table + h2 {
     @apply mt-10;

@@ -12,20 +12,18 @@ export default defineComponent({
 </script>
 <template>
 	<div>
-		<div
-			class="-z-2 bg-white shadow-lg rounded-md flex absolute mx-auto my-10 w-9/10 h-85/100 left-12 top-0"
-		>
-			<div class="slidev-layout default w-full">
+		<div class="z-1 bg-white shadow-lg rounded-md flex absolute mx-auto my-10 w-9/10 h-85/100 left-12 top-0">
+			<div class="slidev-layout default w-full pt-6">
 				<div class="my-auto">
 					<slot />
 				</div>
 			</div>
 		</div>
 
-		<div class="-z-1 flex absolute bottom-0 w-full py-8px">
+		<div class="flex absolute bottom-0 w-full py-8px">
 			<contents :id="id" :contentsValue="$slidev.configs.contents"></contents>
 		</div>
-		<div class="bg-pblue -z-3 flex absolute w-full h-1/3 left-0 bottom-0"></div>
-		<div class="bg-pblue -z-1 rounded-md flex absolute w-1/5 h-1/25 mx-98 my-8 top-0"></div>
+		<div class="bg-pblue flex absolute w-full h-1/3 left-0 bottom-0"></div>
+		<div class="bg-pblue z-2 rounded-md flex absolute w-1/5 h-1/25 left-0 right-0 top-8 mx-auto"></div>
 	</div>
 </template>

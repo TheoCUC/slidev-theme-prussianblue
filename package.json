@@ -18,7 +18,8 @@
 		"theme-vitesse": "^0.1.14"
 	},
 	"devDependencies": {
-		"@slidev/cli": "^0.28.2"
+		"@slidev/cli": "^0.28.2",
+		"playwright-chromium": "^1.29.2"
 	},
 	"engines": {
 		"node": ">=14.0.0",
