@@ -23,7 +23,7 @@ export default defineComponent({
 		<div class="flex absolute bottom-0 w-full py-8px">
 			<contents :id="id" :contentsValue="$slidev.configs.contents"></contents>
 		</div>
-		<div class="bg-pblue flex absolute w-full h-1/3 left-0 bottom-0"></div>
-		<div class="bg-pblue z-2 rounded-md flex absolute w-1/5 h-1/25 left-0 right-0 top-8 mx-auto"></div>
+		<div class="bg-[#002c47] flex absolute w-full h-1/3 left-0 bottom-0"></div>
+		<div class="bg-[#002c47] z-2 rounded-md flex absolute w-1/5 h-1/25 left-0 right-0 top-8 mx-auto"></div>
 	</div>
 </template>

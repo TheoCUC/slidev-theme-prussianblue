@@ -100,9 +100,6 @@ id: 3
 
 # 最优控制问题
 
-<mimage layout="c" url='https://isaacpic-1305775614.cos.ap-beijing.myqcloud.com/uPic/8R2K4h.jpg' class="h-75" />
-
-
 ---
 id: 3
 ---

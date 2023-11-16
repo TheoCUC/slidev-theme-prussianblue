@@ -1,11 +1,12 @@
 :root {
-  // default theme color
-  // can be overrided by uses `themeConfig` option
+  /* default theme color */
+  /* can be overrided by uses `themeConfig` option */
   --slidev-theme-primary: #5d8392;
-	svg {
+  svg {
 		@apply z-100;
-	},
+	}
 }
+
 .slidev-layout {
   div {
     @apply select-none text-[#002c47];
@@ -96,13 +97,13 @@
   @apply text-center mx-auto;
 
   h1 {
-    @apply bg-[#002c47] rounded-md py-10px px-20px text-5xl text-white;
+    @apply bg-[#002c47] rounded-md py-3 px-5 text-5xl text-white;
   }
 
   h2 {
     @apply text-xl font-700 -mt-4;
   }
-},
+}
 .slidev-layout.intro {
   @apply h-full grid;
 
