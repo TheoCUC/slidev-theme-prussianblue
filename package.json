@@ -19,7 +19,7 @@
 	},
 	"devDependencies": {
 		"@slidev/cli": "^0.44.0",
-		"playwright-chromium": "^1.29.2"
+		"playwright-chromium": "^1.39.0"
 	},
 	"engines": {
 		"node": ">=18.0.0",
